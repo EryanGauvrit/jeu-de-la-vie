@@ -119,11 +119,13 @@ const Game = () => {
     return (
         <>
             <div className="flex justify-center gap-3">
-                <Button onClick={() => setPlay(!play)}>{play ? 'Stop' : 'Start'}</Button>
-                <Button onClick={handleReset} variant={'secondary'}>
+                <Button onClick={() => setPlay(!play)} className="uppercase">
+                    {play ? 'Stop' : 'Start'}
+                </Button>
+                <Button onClick={handleReset} variant={'secondary'} className="uppercase">
                     Reset
                 </Button>
-                <Button onClick={randomizeGrid} variant={'ghost'}>
+                <Button onClick={randomizeGrid} variant={'ghost'} className="uppercase">
                     Randomize
                 </Button>
             </div>

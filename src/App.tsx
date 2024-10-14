@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import logo from './assets/logo.png';
 import Game from './components/Game';
 
@@ -9,6 +10,7 @@ function App() {
                 <h1 className="text-3xl uppercase font-bold text-amber-500">Pixel Game Life</h1>
             </div>
             <Game />
+            <Analytics />
         </main>
     );
 }
